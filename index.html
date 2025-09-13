@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <h2>Advanced Website</h2>
+    <ul class="nav-links">
+      <li><a href="#quiz">Quiz</a></li>
+      <li><a href="#carousel">Carousel</a></li>
+      <li><a href="#api">Joke</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <!-- Quiz Section -->
+    <section id="quiz" class="card">
+      <h2>Interactive Quiz</h2>
+      <div id="quizContainer"></div>
+      <button id="submitQuiz">Submit Quiz</button>
+      <p id="quizResult"></p>
+    </section>
+
+    <!-- Carousel Section -->
+    <section id="carousel" class="card">
+      <h2>Image Carousel</h2>
+      <div class="carousel">
+        <button onclick="prevImage()">⟨</button>
+        <img id="carouselImage" src="https://picsum.photos/400/200?random=1" alt="carousel">
+        <button onclick="nextImage()">⟩</button>
+      </div>
+    </section>
+
+    <!-- API Section -->
+    <section id="api" class="card">
+      <h2>Random Joke</h2>
+      <button onclick="fetchJoke()">Get Joke</button>
+      <p id="joke"></p>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
